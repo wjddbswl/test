@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utg-8" />
+    <style>
+      /*최소 1024px까지*/
+      @media (min-width: 1025px) {
+        .container {
+          background-color: yellow;
+        }
+      }
+
+      /*최대 1024px까지*/
+      @media (max-width: 1024px) and (min-width: 800px) {
+        .container {
+          background-color: orange;
+        }
+      }
+      /*최소 800px까지*/
+      @media (max-width: 799px) {
+        .container {
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="width: 1000px; height: 500px">
+      hello world
+    </div>
+  </body>
+</html>
